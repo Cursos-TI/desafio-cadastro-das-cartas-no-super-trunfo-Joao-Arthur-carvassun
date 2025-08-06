@@ -6,8 +6,9 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
-char letra_cidade1;
+int main(){
+   
+ char letra_cidade1;
  char letra_numero1[10];
  char nome_cidade1[20];
  int numero_de_habitantes1;
@@ -68,9 +69,14 @@ scanf("%f",&Pib2);
 printf("Digite quantos pontos turisticos: \n");
 scanf("%i",&Pontos_turisticos2);
 
-printf("Carta 1:\nEstado:%c\nCódigo:%s\nNome da Cidade:%s\nPopulação:%i\nÁrea:%f\nPIB:%f\nNúmero de Pontos Turísticos:%i\n",letra_cidade1,letra_numero1,nome_cidade1,numero_de_habitantes1,Area_cidade1,Pib1,Pontos_turisticos1);
+float  Densidade_Populacional1 = numero_de_habitantes1/Area_cidade1;
+float  Densidade_Populacional2 = numero_de_habitantes2/Area_cidade2;
+float Pib_per_capita1 = Pib1/numero_de_habitantes1; 
+float Pib_per_capita2 = Pib2/numero_de_habitantes2;
 
-printf("Carta 2:\nEstado:%c\nCódigo:%s\nNome da Cidade:%s\nPopulação:%i\nÁrea:%f\nPIB:%f\nNúmero de Pontos Turísticos:%i\n",letra_cidade2,letra_numero2,nome_cidade2,numero_de_habitantes2,Area_cidade2,Pib2,Pontos_turisticos2);
-    
+printf("Carta 1:\nEstado:%c\nCódigo:%s\nNome da Cidade:%s\nPopulação:%i\nÁrea:%f\nPIB:%f\nNúmero de Pontos Turísticos:%i\nDensidade Populacional:%f\nPIB per Capita:%f\n",letra_cidade1,letra_numero1,nome_cidade1,numero_de_habitantes1,Area_cidade1,Pib1,Pontos_turisticos1,Densidade_Populacional1,Pib_per_capita1);
+
+printf("Carta 2:\nEstado:%c\nCódigo:%s\nNome da Cidade:%s\nPopulação:%i\nÁrea:%f\nPIB:%f\nNúmero de Pontos Turísticos:%i\nDensidade Populacional:%f\nPIB per Capita:%f\n",letra_cidade2,letra_numero2,nome_cidade2,numero_de_habitantes2,Area_cidade2,Pib2,Pontos_turisticos2,Densidade_Populacional2,Pib_per_capita2);
+
 return 0;
 }
